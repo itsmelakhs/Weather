@@ -1,0 +1,136 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #d8bdbd, #f5deb3); /* Burlywood gradient */
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #d2b48c; /* Burlywood color */
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+input {
+    padding: 12px;
+    border: 2px solid #d2b48c; /* Burlywood color */
+    border-radius: 25px;
+    width: calc(100% - 140px);
+    margin-right: 10px;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #b8860b; /* Darker burlywood */
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: #d2b48c; /* Burlywood color */
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #b8860b; /* Darker burlywood */
+}
+
+#weather {
+    margin-top: 20px;
+    font-size: 1.2em;
+    animation: fadeIn 1s ease-out;
+    border: 2px solid #d2b48c;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #faf0e6; /* Light background for contrast */
+    max-width: 350px;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.weather-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.weather-data p {
+    margin: 0;
+    padding-left: 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.weather-icon {
+    font-size: 1.6em;
+    color: #d2b48c;
+}
+
+.temp {
+    color: #ff6347; /* Tomato color for temperature */
+}
+
+.desc {
+    color: #4682b4; /* Steel blue for description */
+}
+
+.humidity {
+    color: #32cd32; /* Lime green for humidity */
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    input {
+        width: calc(100% - 110px);
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    #weather {
+        padding: 15px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
